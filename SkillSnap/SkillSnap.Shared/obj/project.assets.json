@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\GitHub\\SkillSnap\\SkillSnap.Shared\\SkillSnap.Shared.csproj",
+      "projectUniqueName": "C:\\GitHub\\saratonini-skillsnap-project\\SkillSnap\\SkillSnap.Shared\\SkillSnap.Shared.csproj",
       "projectName": "SkillSnap.Shared",
-      "projectPath": "C:\\GitHub\\SkillSnap\\SkillSnap.Shared\\SkillSnap.Shared.csproj",
+      "projectPath": "C:\\GitHub\\saratonini-skillsnap-project\\SkillSnap\\SkillSnap.Shared\\SkillSnap.Shared.csproj",
       "packagesPath": "C:\\Users\\toninis\\.nuget\\packages\\",
-      "outputPath": "C:\\GitHub\\SkillSnap\\SkillSnap.Shared\\obj\\",
+      "outputPath": "C:\\GitHub\\saratonini-skillsnap-project\\SkillSnap\\SkillSnap.Shared\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
