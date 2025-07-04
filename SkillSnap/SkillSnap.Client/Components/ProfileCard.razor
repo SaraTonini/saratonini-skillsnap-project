@@ -1,0 +1,14 @@
+@using SkillSnap.Shared.Models
+
+<div class="project-card">
+    <img src="@Project.ImageUrl" alt="@Project.Title image" width="120" />
+    <div class="project-info">
+        <h4>@Project.Title</h4>
+        <p>@Project.Description</p>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public Project Project { get; set; } = default!;
+}

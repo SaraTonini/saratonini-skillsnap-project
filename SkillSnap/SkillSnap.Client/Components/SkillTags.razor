@@ -1,0 +1,20 @@
+@using SkillSnap.Shared.Models
+@using SkillSnap.Client.Services
+
+@inject ProjectService ProjectService
+
+@code {
+    private List<Project>? projects;
+
+    protected override async Task OnInitializedAsync()
+    {
+        projects = await ProjectService.GetProjectsAsync();
+    }
+}
+
+
+<h3>Skills</h3>
+<div class="skill-tags">
+    <span class="tag">C# (Advanced)</span>
+    <span class="tag">Blazor (Intermediate)</span>
+</div>

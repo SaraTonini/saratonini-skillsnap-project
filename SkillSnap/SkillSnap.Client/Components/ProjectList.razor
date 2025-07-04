@@ -1,0 +1,33 @@
+@using SkillSnap.Shared.Models
+@using SkillSnap.Client.Services
+@using SkillSnap.Client.Components
+
+@inject ProjectService ProjectService
+
+<h3>Projects</h3>
+
+@if (projects is null)
+{
+    <p>Loading projects...</p>
+}
+else if (projects.Count == 0)
+{
+    <p>No projects found.</p>
+}
+else
+{
+    @foreach (var project in projects)
+    {
+        <ProjectCard Project="project" />
+    }
+}
+
+@code {
+    private List<Project>? projects;
+
+    protected override async Task OnInitializedAsync()
+    {
+        // Load projects from the API
+        projects = await ProjectService.GetProjectsAsync();
+    }
+}
